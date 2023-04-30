@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+h1{
+    font-size: 3vw !important;
+}
+
+p{
+    font-size: 1.2vw !important;
+}
+
+
+#imagen_BsAs{
+    margin-top:-11%;
+    filter: brightness(50%);
+}
+
+.text_image{
+    margin-right: 9%;
+    margin-top: -3%;
+}
+
+.card-text{
+    text-align: left;
+    font-size: 0.80rem;
+}
+
+
+.BsAs_info{
+    text-align: left;
+    font-size: 0.80rem;
+}
+
+textarea::placeholder{
+    font-size: 25px;
+}
+
+#carousel_text{
+    font-size: 0.3vw;
+}
+
+
+footer{
+    background-color: rgb(30,79, 109);
+}

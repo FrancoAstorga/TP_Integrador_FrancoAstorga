@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Codo a Codo 4.0</title>
+    <link rel="shortcut icon" href="img/codoacodo.png">
+    <link rel="stylesheet" href="style2.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script defer src="activePage.js"></script><!--le indicas al navegador que no ejecute el script hasta que se haya cargado todo el contenido de la página.-->
+</head>
+
+<body>
+
+    <header>
+
+        <nav class="navbar navbar-expand-lg  navbar-dark bg-dark ">
+
+            <div class="container">
+
+                <!--navbar no permite margin left y right, podemos usar 
+                    mx-auto para mover de lugar o usar propiedades de flexbox
+                    como ms(margin-start)->final del todo - me (margin-end)->principio (por defecto) -->
+
+                <a class="navbar-brand">
+                    <img src="img/codoacodo.png" alt="logo_codo_a_codo" width="120" height="70">
+                    <span class="text-white">Conf Bs As</span>
+                </a>
+
+                <!--navbar-toggler: Clase utilizada en el botón para mostrar/ocultar la barra de navegación en pantallas más pequeñas.-->
+              
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!--collapse: Clase que indica que el elemento puede colapsarse y desaparecer. En este caso, se aplica a un contenedor que agrupa los elementos de la barra de navegación.
+                navbar-collapse: Clase utilizada para indicar que el elemento es un contenedor para elementos de navegación en una barra de navegación.-->
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#"> La conferencia</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Los oradores</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="#">El lugar y la fecha</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Conviértete en orador</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link  text-success " href="#">Comprar tickets</a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </nav>
+
+      
+    
+    
+    </header>
+
+    <!--MEDIAS QUERIES
+        Small	sm	≥576px
+        Medium	md	≥768px
+        Large	lg	≥992px
+        Extra large	xl	≥1200px
+    -->
+
+    <!--Imagen principal-->
+   <!--img-fluid se ajusta al div padre, alternativa a width 100vw-->
+   <!--btn-light->borde blanco-->
+   <!--
+    <div class="container_image">
+        
+        <img src="img/ba1.jpg" alt="imagen_buenos_aires" class="img-fluid" style="filter: brightness(50%);">
+
+        <div class="image_info text-ms-end">
+            <h1>Conf Bs As</h1>
+            <p>
+                Bs As llega por primera vez a Argentina. Un evento para compartir con
+                nuestra comunidad el conocimiento y expereiencia de los expertos que
+                están creando el futuro de Internet. Ven a conocer a miembros del
+                evento, a otros estudiantes de Codo a Codo y los oradores de primer
+                nivel que tenemos para ti. Te esperamos!
+            </p>
+            <div class="buttons">
+                
+                <button type="button" class="btn btn-light bg-transparent  text-white mx-3">Quiero ser orador</button>
+                <button type="button" class="btn btn-success" >Comprar tickets</button>
+            </div>
+        </div>
+    </div>
+
+-->
+
+<div class="container-fluid p-0 ">
+    <div class="row align-items-center justify-content-end">
+        <div class="overflow-hidden d-flex justify-content-center" style="margin-top:-10%;">
+            <img src="img/ba1.jpg" class="img-fluid" alt="Descripción de la imagen">
+        </div>
+        
+        <div class="col-5 position-absolute text-white text-end" style="margin-right: 9%;margin-top: -3%;">
+       
+            <!--tranlate-middle-x centra horizontalmente ,tranlate-middle-y centra verticalmente -->
+            <h1>Conf Bs As</h1>
+            <p class="text-size-adjust">
+                Bs As llega por primera vez a Argentina. Un evento para compartir con
+                nuestra comunidad el conocimiento y expereiencia de los expertos que
+                están creando el futuro de Internet. Ven a conocer a miembros del
+                evento, a otros estudiantes de Codo a Codo y los oradores de primer
+                nivel que tenemos para ti. Te esperamos!
+            </p>
+        </div>
+      
+     </div>
+    </div>
+  </div>
+
+  
+  
+    <div class="row justify-content-center mt-3">
+        <div class="card border-0" style="width: 20rem;">
+            <img src="img/steve.jpg" class="card-img-top" alt="image_steve_jobs">
+            <div class="card-body ">
+                <span class="badge bg-warning text-dark">Javascript</span>
+                <span class="badge bg-info text-dark">React</span>
+                <h5>Steve Jobs</h5>
+                <p class="card-text ">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deserunt neque omnis
+                    cupiditate amet voluptas debitis sequi, necessitatibus quas, est harum quisquam odit quae fugit
+                    veniam ea quibusdam autem nihil? Iste.</p>
+            </div>
+        </div>
+
+        <div class="card border-0" style="width: 20rem;">
+            <img src="img/bill.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <span class="badge bg-warning text-dark">Javascript</span>
+                <span class="badge bg-info text-dark">React</span>
+                <h5>Bill Gates</h5>
+                <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sint, magnam
+                    assumenda. Nobis esse provident, dignissimos, nemo quasi reiciendis alias tempore dolorum
+                    perferendis corporis numquam dicta et est adipisci, a recusandae!</p>
+            </div>
+        </div>
+
+        <div class="card border-0" style="width: 20rem;">
+            <img src="img/ada.jpeg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <span class="badge bg-secondary">Negocios</span>
+                <span class="badge bg-danger">Startups</span>
+                <h5>Ada Lovelace</h5>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet repellat nobis
+                    maiores quibusdam accusantium? Ipsa alias blanditiis et, mollitia nesciunt in reiciendis
+                    corporis placeat eveniet! Quaerat quia iusto ut recusandae!</p>
+            </div>
+        </div>
+    </div>
+    
+    <!--container-fluid establece un alto de 500px, con img-fluid llena esa altura y todo el ancho
+    si necesitaramos mas altura habria que usar css y poner a cada imagen height 100%-->
+    <div class="container-fluid">
+        <div class="row mt-4" >
+            <div class="col-6 p-0 col-sin-margen">
+                <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                      <div class="carousel-item active" data-bs-interval="3000">
+                        <img src="img/honolulu .jpg" class="img-fluid" alt="...">
+                      </div>
+                      <div class="carousel-item" data-bs-interval="3000">
+                        <img src="img/hawaii2.jpg" class="img-fluid" alt="...">
+                      </div>
+                      <div class="carousel-item" data-bs-interval="3000">
+                        <img src="img/hawaii3.jpg" class="img-fluid" alt="...">
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+            <div class="col-6 bg-dark text-white pt-3 BsAs_info">
+                <h3>Bs As - Octubre</h3>
+                <p>
+                    Buenos Aires es la provincia y localidad mas grande del estado de Argentina, en los
+                    Estados Unidos. Honolulu es la más sureña de entre las principales ciudades estadounidenses.
+                    Aunque el nombre de Honolulu se refiere al área urbana en la costa sureste de la isla de Oahu,
+                    la ciudad y el condado de Honolulu han formado una ciudad-condado consolidada que cubre toda la
+                    ciudad
+                    (aproximadamente 600 km<sup>2</sup> de superficie).
+                </p>
+                <button type="button" class="btn btn-light bg-transparent  text-white">Conocé más</button>
+
+            </div>
+        </div>
+    </div>
+
+
+   
+</body>
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+
+<footer>
+
+
+    <div class="container">
+        <div class="row mt-3 text-white align-items-center" style="height:100px">
+           <div class="col-6">
+                <div class="row text-center align-items-center">
+                    <div class="col-3">
+                        Preguntas 
+                        frecuentes
+                    </div>
+                    <div class="col-3">
+                        Contáctanos
+                    </div>
+                    <div class="col-3">
+                        Prensa
+                    </div>
+                    <div class="col-3">
+                        Conferencias
+                    </div>
+                </div>
+           </div>
+           <div class="col-6">
+                <div class="row text-center align-items-center ">
+                    <div class="col-3">
+                        Terminos y 
+                        condiciones
+                    </div>
+                    <div class="col-3">
+                        Privacidad
+                    </div>
+                    <div class="col-3">
+                        Estudiantes
+                    </div>
+                    
+                </div>
+           </div>
+        </div>
+
+    </div>
+
+</footer>
+
+</html>
