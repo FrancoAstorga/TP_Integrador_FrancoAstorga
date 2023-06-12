@@ -4,11 +4,11 @@
 }
 
 h1{
-    font-size: 3vw !important;
+    font-size: 3vw;
 }
 
 p{
-    font-size: 1.2vw !important;
+    font-size: 1.2vw;
 }
 
 
@@ -41,7 +41,115 @@ textarea::placeholder{
     font-size: 0.3vw;
 }
 
+.container_tickets{
+    display: flex;
+    justify-content: center;
+    margin-top: 35px;
+}
+
+.ticket{
+    height: 220px;
+    width: 260px;
+    margin-left: 5px;
+    text-align: center;
+    padding-top: 20px;
+    cursor: pointer;
+}
+
+.ticket_border_1{
+    border: solid skyblue 1px;
+}
+.ticket_border_2{
+    border: solid orange 1px;
+}
+
+.title_ventas{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.title_ventas input{
+    width: 400px;
+    height: 40px;
+}
+
+.title_ventas input::placeholder{
+ font-size: 18px;
+}
+
+.form_ventas{
+    display: flex;
+    gap:15px; /*espaciado entre elementos*/
+}
+
+#boton_ancho{
+    margin-top: 20px;
+    width: 815px;
+    margin-bottom: 10px;
+}
+
+.selection_form{
+    display: flex;
+    justify-content: center;
+    gap:15px
+}
+
+.selection_inputs{
+    justify-content: center;
+}
+
+.selection_inputs input,select{
+    width: 400px;
+    height: 40px;
+
+}
+
+.confirmacion_venta{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#total_pago{
+    margin-top: 20px;
+    height:50px;
+    width: 815px;
+    margin-bottom: 10px;
+    background-color: skyblue;
+    padding-top:10px;
+    padding-left: 10px;
+}
+
+.botones_finales{
+    display: flex;
+    gap:15px;
+}
+
+.botones_finales button{
+    width: 400px;
+    height: 40px;
+    background-color: greenyellow;
+    color:white;
+    border:none;
+    border-radius: 6px;
+}
 
 footer{
     background-color: rgb(30,79, 109);
 }
+
+
+@media screen and (max-width: 575px) {
+    /* Estilos para pantallas menores o iguales a 576px */
+  
+}
+  
+@media screen and (min-width: 576px) and (max-width: 767px) {
+/* Estilos para pantallas mayores o iguales a 576px y menores o iguales a 768px */
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+/* Estilos para pantallas mayores o iguales a 768px y menores o iguales a 992px */
+}
+

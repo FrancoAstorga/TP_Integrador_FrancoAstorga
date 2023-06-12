@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>Codo a Codo 4.0</title>
+    <link rel="shortcut icon" href="img/codoacodo.png">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script defer src="TotalPagar.js"></script>
+    <!--le indicas al navegador que no ejecute el script hasta que se haya cargado todo el contenido de la página.-->
+</head>
+
+
+<body>
+
+    <header>
+        <!--navbar-dark: esta clase establecerá el color del texto en claro. Esto se usa cuando se usa un color de fondo oscuro.-->
+        <!--bg-dark background-color->oscuro-->
+        <nav class="navbar navbar-expand-lg  navbar-dark bg-dark ">
+
+            <div class="container">
+
+
+                <!--navbar no permite margin left y right, podemos usar 
+                    mx-auto para mover de lugar (se mueve hacia la derecha porque por defecto
+                    se encuentra a la izquierda) o usar propiedades de flexbox
+                    como ms(margin-start)->final del todo - me (margin-end)->principio (por defecto) -->
+
+                <a class="navbar-brand">
+                    <img src="img/codoacodo.png" alt="logo_codo_a_codo" width="120" height="70">
+                    <span class="text-white">Conf Bs As</span>
+                </a>
+
+                <!--navbar-toggler: Clase utilizada en el botón para mostrar/ocultar la barra de navegación en pantallas más pequeñas.-->
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!--collapse: Clase que indica que el elemento puede colapsarse y desaparecer. En este caso, se aplica a un contenedor que agrupa los elementos de la barra de navegación.
+                navbar-collapse: Clase utilizada para indicar que el elemento es un contenedor para elementos de navegación en una barra de navegación.-->
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html"> La conferencia</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Los oradores</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="#">El lugar y la fecha</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Conviértete en orador</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link  text-success" href="#">Comprar tickets</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container_tickets">
+
+        <div class="ticket ticket_border_1">
+            <h4>Estudiante</h4>
+            <p>Tienen un descuento</p>
+            <p>80%</p>
+            <p>*presentar documentación</p>
+        </div>
+        <div class="ticket ticket_border_1">
+            <h4>Trainee</h4>
+            <p>Tienen un descuento</p>
+            <p>50%</p>
+            <p>*presentar documentación</p>
+        </div>
+        <div class="ticket ticket_border_2">
+            <h4>Junior</h4>
+            <p>Tienen un descuento</p>
+            <p>15%</p>
+            <p>*presentar documentación</p>
+        </div>
+
+    </div>
+
+
+    <main>
+        <!--Lo ponemos para usar la funcion reset -->
+        <form action="">
+
+            <!--formulario-->
+            <div class="title_ventas">
+                <h6>Venta</h6>
+                <h1>VALOR DE TICKET $200</h1>
+                <div class="form_ventas">
+                    <input type="text" placeholder="Nombre">
+                    <input type="text" placeholder="Apellido">
+                </div>
+
+                <input type="email" placeholder="Correo" id="boton_ancho">
+
+            </div>
+
+            <div class="selection_form">
+                <div class="selection_inputs">
+                    <h5>Cantidad</h5>
+                    <input id="cantidad" type="text" placeholder="Cantidad">
+                </div>
+                <div class="selection_inputs">
+                    <h5>Categoria</h5>
+                    <select id="categoria" class="selection_select">
+                        <option value="option1">Estudiante</option>
+                        <option value="option2">Trainee</option>
+                        <option value="option3">Junior</option>
+                    </select>
+
+                </div>
+
+            </div>
+
+            <div class="confirmacion_venta">
+                <div id="total_pago"> Total a Pagar: </div>
+                <div class="botones_finales">
+                    <button type="reset">Borrar</button>
+                    <button type="button" id="resumen">Resumen</button>
+
+                </div>
+            </div>
+
+        </form>
+    </main>
+
+
+</body>
+
+<footer>
+
+
+    <div class="container">
+        <div class="row mt-3 text-white align-items-center" style="height:100px">
+            <div class="col-7">
+                <div class="row text-center align-items-center">
+                    <div class="col-3">
+                        Preguntas
+                        frecuentes
+                    </div>
+                    <div class="col-3">
+                        Contáctanos
+                    </div>
+                    <div class="col-3">
+                        Prensa
+                    </div>
+                    <div class="col-3">
+                        Conferencias
+                    </div>
+                </div>
+            </div>
+            <div class="col-5">
+                <div class="row text-center align-items-center ">
+                    <div class="col-4">
+                        Terminos y
+                        condiciones
+                    </div>
+                    <div class="col-4">
+                        Privacidad
+                    </div>
+                    <div class="col-4">
+                        Estudiantes
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</footer>
+
+
+</html>
