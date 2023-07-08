@@ -15,6 +15,7 @@ botonResumen.addEventListener("click",()=>{
     }
 
     document.getElementById("total_pago").innerHTML = "Total a Pagar: $"+ resumen
+    document.getElementById("totalPago").value = resumen;
 })
 
 
