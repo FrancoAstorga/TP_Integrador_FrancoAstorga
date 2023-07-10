@@ -103,7 +103,7 @@
                     <input type="text" placeholder="Apellido" name="lastName">
                 </div>
 
-                <input type="email" placeholder="Correo" id="boton_ancho" name="email">
+                <input type="email" placeholder="Correo" id="boton_ancho" name="email" required>
 
             </div>
 
@@ -127,11 +127,13 @@
             <div class="confirmacion_venta">
                 <div id="total_pago"> Total a Pagar: </div>
                 <input type="hidden" name="totalPagar" id="totalPago">
-                <div class="botones_finales">
+                <div class="botones_finales mb-3">
                     <button type="reset">Borrar</button>
                     <button type="submit" id="resumen">Resumen</button>
 
                 </div>
+
+                <a href="datos.php"><button type="button" class="btn btn-success">Ver tickets comprados</button></a>
             </div>
 
         </form>

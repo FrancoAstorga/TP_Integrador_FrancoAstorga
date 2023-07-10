@@ -1,22 +1,27 @@
 <?php
+include('recursos.php');
 
-$nombre = $_POST['name'];
-$apellido = $_POST['lastName'];
-$correo = $_POST['email'];
-$cantidad = $_POST['cantidad'];
-$total = $_POST['totalPagar'];
+if (isset($_POST['email'])){ //ya que el mail es obligatorio ponerlo solo si se envia agarramos los datos
+    $nombre = $_POST['name'];
+    $apellido = $_POST['lastName'];
+    $correo = $_POST['email'];
+    $cantidad = $_POST['cantidad'];
+    $total = $_POST['totalPagar'];
 
-$categoria = $_POST['categoria'];
+    $categoria = $_POST['categoria'];
 
-if ($categoria == "option1") {
-    $categoria = "Estudiante";
-} else if ($categoria = "option2") {
-    $categoria = "Trainee";
-} else if ($categoria = "option3") {
-    $categoria = "Junior";
+    if ($categoria == "option1") {
+        $categoria = "Estudiante";
+    } else if ($categoria = "option2") {
+        $categoria = "Trainee";
+    } else if ($categoria = "option3") {
+        $categoria = "Junior";
+    }
+
+    $cons->insertarVenta($nombre, $apellido, $correo, $cantidad, $categoria, $total);
+
+
 }
-
-
 
 /* 
 echo '<script> console.log("'.$nombre.'");</script>';
@@ -28,9 +33,7 @@ echo '<script> console.log("'.$total.'");</script>';
 */
 
 
-include('recursos.php');
 
-$cons->insertarVenta($nombre, $apellido, $correo, $cantidad, $categoria, $total);
 
 ?>
 
@@ -45,8 +48,9 @@ $cons->insertarVenta($nombre, $apellido, $correo, $cantidad, $categoria, $total)
 
 </head>
 
-<body>
-    <a href="comprarTickets.html"><button type="button" class="btn btn-primary">Volver Atrás</button></a>
+<body class="bg-primary">
+    <div class="container-fluid bg-warning">
+            <a href="comprarTickets.html"><button type="button" class="btn btn-primary">Volver Atrás</button></a>
     <?php
     $datos = $cons->traerVentas();
     if (count($datos) > 0) {
@@ -76,12 +80,14 @@ $cons->insertarVenta($nombre, $apellido, $correo, $cantidad, $categoria, $total)
                 <?php } ?>
             </tbody>
         </table>
-
+    
     <?php } else { ?>
 
         <h1>ERROR 404</h1>
 
     <?php } ?>
+    </div>
+
 </body>
 
 </html>
