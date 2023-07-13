@@ -14,54 +14,7 @@
 
 <body>
 
-    <header>
-        <!--navbar-dark: esta clase establecerá el color del texto en claro. Esto se usa cuando se usa un color de fondo oscuro.-->
-        <!--bg-dark background-color->oscuro-->
-        <nav class="navbar navbar-expand-lg  navbar-dark bg-dark ">
-
-            <div class="container">
-
-
-                <!--navbar no permite margin left y right, podemos usar 
-                    mx-auto para mover de lugar (se mueve hacia la derecha porque por defecto
-                    se encuentra a la izquierda) o usar propiedades de flexbox
-                    como ms(margin-start)->final del todo - me (margin-end)->principio (por defecto) -->
-
-                <a class="navbar-brand">
-                    <img src="img/codoacodo.png" alt="logo_codo_a_codo" width="120" height="70">
-                    <span class="text-white">Conf Bs As</span>
-                </a>
-
-                <!--navbar-toggler: Clase utilizada en el botón para mostrar/ocultar la barra de navegación en pantallas más pequeñas.-->
-              
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-
-                <!--collapse: Clase que indica que el elemento puede colapsarse y desaparecer. En este caso, se aplica a un contenedor que agrupa los elementos de la barra de navegación.
-                navbar-collapse: Clase utilizada para indicar que el elemento es un contenedor para elementos de navegación en una barra de navegación.-->
-                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#"> La conferencia</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Los oradores</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link " href="#">El lugar y la fecha</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Conviértete en orador</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link  text-success" href="comprarTickets.html">Comprar tickets</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-    </header>
+    <?php include('header.html'); ?>
 
     <!--Imagen principal-->
     <div class="container-fluid p-0 ">
@@ -234,50 +187,7 @@
 </body>
 
 
-
-<footer>
-
-
-    <div class="container">
-        <div class="row mt-3 text-white align-items-center" style="height:100px">
-            <div class="col-7">
-                <div class="row text-center align-items-center">
-                    <div class="col-3">
-                        Preguntas
-                        frecuentes
-                    </div>
-                    <div class="col-3">
-                        Contáctanos
-                    </div>
-                    <div class="col-3">
-                        Prensa
-                    </div>
-                    <div class="col-3">
-                        Conferencias
-                    </div>
-                </div>
-            </div>
-            <div class="col-5">
-                <div class="row text-center align-items-center ">
-                    <div class="col-4">
-                        Terminos y
-                        condiciones
-                    </div>
-                    <div class="col-4">
-                        Privacidad
-                    </div>
-                    <div class="col-4">
-                        Estudiantes
-                    </div>
-
-                </div>
-            </div>
-        </div>
-
-    </div>
-
-</footer>
-
+<?php include 'footer.html';?>
 
 
 </html>

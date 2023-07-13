@@ -1,5 +1,4 @@
 navbar= document.querySelector(".navbar").querySelectorAll("a.nav-link");
-console.log(navbar);
 
 navbar.forEach(element => {
     element.addEventListener("click",function(){
@@ -8,3 +7,5 @@ navbar.forEach(element => {
         this.classList.add("active");
     })
 });
+
+

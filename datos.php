@@ -1,5 +1,5 @@
 <?php
-include('recursos.php');
+require_once('recursos.php');
 
 if (isset($_POST['email'])){ //ya que el mail es obligatorio ponerlo solo si se envia agarramos los datos
     $nombre = $_POST['name'];
